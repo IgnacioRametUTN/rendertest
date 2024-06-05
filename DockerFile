@@ -3,7 +3,7 @@ FROM alpine:latest AS build
 
 # Actualizar e instalar dependencias necesarias
 RUN apk update && \
-    apk add openjdk17 bash wget
+    apk add openjdk17 bash wget unzip
 
 # Añadir Gradle
 ARG GRADLE_VERSION=7.3.3
